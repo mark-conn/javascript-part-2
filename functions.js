@@ -88,10 +88,44 @@ var arrayOfNumObjs = [
     ]
 
 
-console.log(squareNum(arrayOfNumObjs));
+//console.log(squareNum(arrayOfNumObjs));
 
 
+//
 
+
+//Operation Maker
+function operationMaker(operation) {
+    return function decider(num1, num2) {
+    switch(operation) {
+          case 'add':
+              return num1 + num2;
+              break;
+          case 'subtract':
+              if(num1 >= num2) {
+                  return num1 - num2;
+              } else {
+                  return num2 - num1;
+              }
+              break;
+          case 'mult':
+              return num1 * num2;
+              break;
+          case 'div':
+              return num1 / num2;
+              break;
+          default:
+              return 0;
+            }
+        }
+    }
+
+
+var adder = operationMaker('add');
+var sum = adder(5,15);
+
+var divider = operationMaker('div');
+var ratio = divider(6,2);
 
 
 
