@@ -53,3 +53,18 @@ arrayOfObjects.sort(function(a,b) {
 
 
 
+/*Create a function that can be used with Array.prototype.map. 
+This function should take a number and return its square. 
+Then, use this function with map on an array of numbers to check the result.
+*/
+
+
+var numbers = [1,2,3,4,5,6];
+
+function squares(arr) {
+    return arr.map(function(num) {
+    return num * 2;
+});
+}
+
+console.log(squares(numbers));
