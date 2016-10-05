@@ -63,8 +63,22 @@ var numbers = [1,2,3,4,5,6];
 
 function squares(arr) {
     return arr.map(function(num) {
-    return num * 2;
+    return num * num;
 });
 }
 
-console.log(squares(numbers));
+//console.log(squares(numbers));
+
+/*Create a function that can be used with Array.prototype.map. 
+This function should be able to take an object and square its “num” property. 
+Then, use this function with map on an array of objects each 
+containming a “num” property */
+
+
+
+
+
+
+
+
+
