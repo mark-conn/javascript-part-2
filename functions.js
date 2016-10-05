@@ -73,7 +73,22 @@ function squares(arr) {
 This function should be able to take an object and square its “num” property. 
 Then, use this function with map on an array of objects each 
 containming a “num” property */
+function squareNum(array) {
+    return array = array.map(function(obj){
+            obj.num = obj.num * obj.num;
+            return obj;
+        })
+}
 
+var arrayOfNumObjs = [
+    { num: 1 },
+    { num: 2 },
+    { num: 3 }
+    
+    ]
+
+
+console.log(squareNum(arrayOfNumObjs));
 
 
 
