@@ -61,7 +61,7 @@ var util = require('util');
 function Tile(type) {
     this.type = type;
     
-        if (type === ("grass" || "sand")) {
+        if (type === "grass" || type === "sand") {
             this.isWalkable = true;
         }
         else {
